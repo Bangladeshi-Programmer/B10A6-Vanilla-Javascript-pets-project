@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API assignment</title>
+  <!-- daisi ul -->
+
+   
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- header section -->
+  <header>
+    <!-- navbar -->
+    <nav class="flex justify-between items-center mb-8 md:px-10 lg:px-16 px-8 mt-12">
+      <div class="flex gap-4">
+        <img src="assets/images/logo.webp" alt="">
+        <h3 class="font-extrabold text-xl">Peddy</h3>
+      </div>
+      <div class="flex gap-5">
+        <a href="">Home</a>
+        <a href="">Shop</a>
+        <a href="">Contact</a>
+      </div>
+      <img class="w-10 h-10" src="assets/images/Frame 4 (1).png" alt="">
+     </nav>
+      <!-- banner section  -->
+<section class="text-center md:px-10 lg:px-16 px-8 mt-12">
+  <span>Bringing Families Together ❤️‍🔥 </span>
+  <h1 class="font-extrabold text-3xl mt-5">Your Path to Adoption <br> Starts Here</h1>
+  <p class="mt-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it has a.</p>
+  <div class="mt-5">
+    <button class="text-white text-xl bg-cyan-800 rounded-md py-1 px-3">View More</button>
+    </div>
+    <div class="flex justify-center">
+      <img class="w-[60vw] h-[60vh]" src="assets/images/pet.webp" alt="">
+    </div>
+  </div>
+</section>
+  </header>
+   
+   <!-- main section -->
+<main class="md:px-10 lg:px-16 px-8 mt-12">
+ <!-- button section -->
+ <section class="mt-8">
+  <div class="text-center">
+    <h2 class="text-black font-bold text-3xl mb-5">Adopt  Your  Best Friend</h2>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a <br> page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+    <!-- button functionality -->
+    <div id="buttonContainer">
+    </div>
+    <div class="flex justify-center">
+      <span id="spinner"  class="loading loading-bars loading-lg hidden "></span>
+     </div>
+
+</section>
+<!-- Sort -->
+<div class="flex justify-between mt-8 mb-8">
+  <h2 class="text-black font-semibold">Best Deal For You</h2>
+  <button class="bg-cyan-800 text-white px-2 rounded-md">Sort by Price</button>
+</div>
+<!-- image functionality -->
+<div class="flex">
+<div id="left-side-functionality" class="lg:w-3/4 md:grid lg:grid flex  flex-col lg:grid-cols-3 md:grid-cols-2 md:w-4/5 grid-cols-1 w-4/6 gap-4 items-center mx-auto">
+
+</div>
+
+<div id="showImg" class="lg:w-1/4 md:w-1/5 w-2/6
+ p-4 grid grid-cols-3 m-2 h-16"></div>
+</div>
+</main>
+
+    <!-- footer section -->
+    <footer class="bg-black mb-16 text-gray-300 px-8 py-8 max-w-screen-xl  mx-auto ">
+      <div class="flex flex-col md:flex-col lg:grid lg:grid-cols-3 gap-10 text-center lg:text-left">
+        <div>
+          <div class="flex gap-4 justify-center lg:justify-start">
+            <img src="assets/images/logo.webp" alt="">
+            <h3 class="font-extrabold text-xl text-white">Peddy</h3>
+          </div>
+          <p class="mt-6">Location: av. Washington 165, NY CA 54003</p>
+          <p>Phone: +31 85 964 47 25</p>
+          <p>Email: info@yourdomain.com</p>
+          <p>Opening hours: 9.00 AM - 5.00 PM</p>
+          <div class="flex gap-5 items-center justify-center lg:justify-start mt-5">
+            <img class="w-10 h-10" src="https://img.icons8.com/?size=48&id=118497&format=png" alt="">
+            <img class="bg-white w-8 h-8" src="https://img.icons8.com/?size=50&id=6Fsj3rv2DCmG&format=png" alt="">
+            <img class="w-10 h-10" src="https://img.icons8.com/?size=48&id=9a46bTk3awwI&format=png" alt="">
+            <img class="w-10 h-10" src="https://img.icons8.com/?size=48&id=Xy10Jcu1L2Su&format=png" alt="">
+          </div>
+        </div>
+        <div>
+          <h2 class="text-white text-xl">Useful Links</h2>
+          <div class="flex flex-col items-center lg:items-start mt-6">
+            <a class="hover:underline" href="">Home</a>
+            <a class="hover:underline" href="">About Us</a>
+            <a class="hover:underline" href="">Animals</a>
+            <a class="hover:underline" href="">Foundation</a>
+            <a class="hover:underline" href="">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-white text-xl">Drop Message</h3>
+          <div class="flex flex-col items-center lg:items-start mt-6">
+            <input class="bg-slate-800 rounded-md px-2 mb-4 p-1 text-gray-300 placeholder-gray-400" type="text" placeholder="Enter your email">
+            <button class="bg-cyan-800 text-white p-1 rounded-md hover:bg-cyan-600">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--details modal -->
+<button class="btn hidden" onclick="my_modal_5.showModal()">open modal</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle ">
+  <div class="modal-box">
+    <div id="modal-content">
+
+    </div>
+    <div class="modal-action">
+      <form method="dialog w-full">
+        <!-- if there is a button in form, it will close the modal -->
+         
+          
+        <button class="btn w-full">Close</button>
+          
+         
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- coundown modal -->
+<div id="coundownModal" class="w-[400px] h-[220px] hidden border-solid border-slate-900 border-2 box-border text-center mx-auto p-2 rounded-md fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-500">
+  <h1 class="mb-3 text-white">hello world</h1>
+  <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, itaque pariatur soluta eum deserunt quam unde quia quas odit labore ipsam nulla. Perspiciatis porro optio quidem? Possimus tenetur nulla ratione.</p>
+  <div class="text-center text-3xl font-bold mt-2 text-red-700" id="timer">3</div>
+</div>
+
+
+
+
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>
